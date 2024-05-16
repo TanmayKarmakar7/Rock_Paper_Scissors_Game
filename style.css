@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #081b31;
+}
+h1{
+    background-color: #081b31;
+    color: white;
+    height: 5rem;
+    font-size: 45px;
+    line-height: 6rem;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.choice{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choice img{
+    height: 130px;
+    width: 130px;
+    cursor: pointer;
+    object-fit: cover;
+    /* transform: rotate(270deg); */
+}
+.choice img:hover{
+    transform: scale(1.04);
+}
+#rock img{
+    height: 132px;
+    width: 132px;
+}
+#scissor img{
+    height: 145px;
+    width: 145px;
+}
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+#user-score, #computer-score{
+    font-size: 3rem;
+    color: orangered;
+}
+.msg-container{
+    margin-top: 4rem;
+}
+#msg{
+    background-color: rgb(255, 57, 90);
+    color: rgb(241, 231, 231);
+    border: 2px solid rgb(235, 224, 224);
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    display: inline;
+    font-weight: 700;
+}
+.user, .computer{
+    font-weight: 700;
+    color: dodgerblue;
+}
+.stats{
+    margin-top: 4rem;
+}
+#game-stats{
+    color: rgb(241, 231, 231);
+    font-size: 1.5rem;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    display: inline;
+}
+.reset-btn{
+    padding: 12px 28px;
+    border: 1px solid rgb(109, 255, 47);
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(109, 255, 47);
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    transition: all linear 0.1s;
+    margin: 50px 0px 40px 0px;
+}
+.reset-btn:active{
+    transform: scale(0.97);
+}
+
+@media (width <= 720px) {
+    h1{
+        height: 8rem;
+        font-size: 25px;
+        line-height: 10rem;
+    }
+    .choice{
+        padding-bottom: 24px;
+        height: 75px;
+        width: 75px;
+    }
+    .choice img{
+        height: 64px;
+        width: 64px;
+    }
+    #rock img{
+        height: 67px;
+        width: 67px;
+    }
+    #scissor img{
+        height: 73px;
+        width: 73px;
+    }
+    #user-score, #computer-score{
+        font-size: 2rem;
+        color: orangered;
+    }
+    .score-board{
+        gap: 3.5rem;
+        font-size: 0.75rem;
+    }
+    #msg{
+        font-size: 0.85rem;
+        padding: 0.7rem 1rem;
+        font-weight: 600;
+    }
+    #game-stats{
+        font-size: 0.65rem;
+        padding: 0.75rem 1rem;
+    }
+    .reset-btn{
+        margin: 40px 0px 40px 0px;
+    }
+}
