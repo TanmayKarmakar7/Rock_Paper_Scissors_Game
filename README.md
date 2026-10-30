@@ -4,4 +4,4 @@ This is a simple Rock-paper-scissors game made withÂ HTML, CSS, and JavaScript.Â
 
 
 
-![Rock Paper Scissors Game](https://github.com/user-attachments/assets/7e2977a6-3145-4400-9ddb-c1df549cc7af)
+<img width="1917" height="792" alt="image" src="https://github.com/user-attachments/assets/cc234a63-9e32-4733-a30e-ad4ef101cd2a" />
